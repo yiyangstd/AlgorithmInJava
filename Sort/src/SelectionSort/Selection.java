@@ -25,7 +25,13 @@ public class Selection {
 
     public static void main(String[] args){
         Integer[] test = {new Integer(12), new Integer(2), new Integer(34), new Integer(8), new Integer(24)};
+        System.out.print("Before Sort: ");
+        for(Integer inte : test){
+            System.out.print(inte + " ");
+        }
         Selection.sort(test);
+        System.out.println();
+        System.out.print("After Sort: ");
         for(Integer inte : test){
             System.out.print(inte + " ");
         }
