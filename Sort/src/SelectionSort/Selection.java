@@ -3,7 +3,7 @@ package SelectionSort;
 import SortModel.SortModel;
 
 /**
- * 直接插入排序
+ * 选择排序
  * Created by yangyi on 2014/9/26.
  */
 public class Selection {
