@@ -1,5 +1,7 @@
 package SelectionSort;
 
+import SortModel.SortModel;
+
 /**
  * 直接插入排序
  * Created by yangyi on 2014/9/26.
@@ -11,14 +13,12 @@ public class Selection {
         for(int i = 0; i < length; i ++){
             flag = i;
             for(int j = i + 1; j < length; j++){
-                if(a[j].compareTo(a[flag]) < 0){
+                if(SortModel.less(a[j], a[flag])){
                     flag = j;
                 }
             }
             if(flag != i) {
-                Comparable temp = a[i];
-                a[i] = a[flag];
-                a[flag] = temp;
+                SortModel.exch(a, i, flag);
             }
         }
     }
