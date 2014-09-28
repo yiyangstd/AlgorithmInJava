@@ -20,7 +20,7 @@ public class SortModel {
 
     public static void show(Comparable[] a){
         for(Comparable item : a){
-            System.out.print(a + " ");
+            System.out.print(a.toString() + " ");
         }
         System.out.println();
     }
